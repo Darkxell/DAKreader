@@ -27,7 +27,7 @@ public class Main {
 	System.out
 		.println("---------------------------------------------------------------------");
 
-	// C:\Users\Darkxell_mc\Desktop\file.dak
+	// DAKscripts\file.dak
 	boolean canlaunch = true;
 	try {
 	    String filepath = sc.next();

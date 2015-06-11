@@ -1,0 +1,21 @@
+// DAKTYPE 1.0 ;
+// Sample test ;
+// by Darkxell ;
+
+memory: malloc($pos) ;
+memory: setvar($pos,0) ;
+control: setlabel(test) ;
+	io: setRectangle($pos,$pos,10,10,1) ;
+	memory: setvar($pos,$pos+10) ;
+	control: wait(0.5) ;
+control: goto(test) ;
+
+
+memory: malloc($i,var) ;
+memory: setvar($i,1) ;
+io: setpixel(21,21,$i) ;
+io: setrectangle(50,50,100,100,$i) ;
+memory: setvar($i,0) ;
+io: setrectangle(70,70,100,100,$i) ;
+
+control: stop() ;
