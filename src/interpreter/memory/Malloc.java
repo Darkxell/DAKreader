@@ -45,10 +45,13 @@ public class Malloc {
 		case "var":
 		    main.Main.getEMU().variables.addvariable(varname, 0f);
 		    break;
-		/*
-		 * case "string": typedmalloc(line, "string"); break; TODO : add
-		 * string memory allocation
-		 */
+
+		case "string":
+		    System.err
+			    .println("Error : String Type is not yet implemented");
+		    // TODO : Add mallocing to strings
+		    break;
+
 		default:
 		    System.err.println("ERROR : Unknown type \"" + type
 			    + "\" for the variable \"" + varname

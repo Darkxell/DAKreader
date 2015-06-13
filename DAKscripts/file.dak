@@ -1,9 +1,10 @@
 // DAKTYPE 1.0 ;
-// Sample test ;
+// sample test ;
 // by Darkxell ;
 
 memory: malloc($pos) ;
 memory: setvar($pos,0) ;
+
 control: setlabel(test) ;
 	io: setRectangle($pos,$pos,10,10,1) ;
 	memory: setvar($pos,$pos+10) ;

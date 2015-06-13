@@ -27,6 +27,10 @@ public class Interpreter {
      * */
     public void execute(String codeLine) {
 
+	// For debug purposes.
+	// System.out.println("---Executing line" + main.Main.getEMU().nextline
+	//	+ " :");
+
 	if (main.StringMatcher.stringMatch(codeLine, "//*;")
 		| main.StringMatcher.stringMatch(codeLine, "*//*;")) {
 	} else if (main.StringMatcher.stringMatch(codeLine, "control:*;")

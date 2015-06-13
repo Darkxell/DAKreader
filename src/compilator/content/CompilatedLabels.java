@@ -44,11 +44,13 @@ public class CompilatedLabels {
 		    }
 		}
 	}
-
     }
 
-    /** adds a label to the list. */
-    public void addlabel(Label lbl) {
+    /**
+     * adds a label to the list. <br/>
+     * Private because normally, you can add a label only by compilating code.
+     */
+    private void addlabel(Label lbl) {
 	Label[] temp = this.labels;
 	int prevlength = temp.length;
 	Label[] newarray = new Label[prevlength + 1];
@@ -74,7 +76,7 @@ public class CompilatedLabels {
     /** get the line of the asked label name */
     public int getvariable(String name) {
 	for (int i = 0; i < labels.length; i++) {
-	    if (labels[i].name == name)
+	    if (labels[i].name.equals(name))
 		return labels[i].line;
 	}
 	return 0;
