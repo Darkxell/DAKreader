@@ -1,4 +1,4 @@
-package emulator.content;
+package emulator.content.vars;
 
 /** the DAK default variable type. */
 public class Variable {

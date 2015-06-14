@@ -1,6 +1,6 @@
 package interpreter.io;
 
-import emulator.content.Variable;
+import emulator.content.vars.Variable;
 import exceptions.NoBracketsOccurenceException;
 
 public class Display {

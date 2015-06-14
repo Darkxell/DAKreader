@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 
 import compilator.CompilatedCode;
 import emulator.content.DAKgrid;
-import emulator.content.VarList;
+import emulator.content.vars.VarList;
 
 /** DAKemu is a frame object that can read .dak scripts */
 public class DAKemu {

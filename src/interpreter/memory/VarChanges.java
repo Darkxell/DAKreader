@@ -1,6 +1,6 @@
 package interpreter.memory;
 
-import emulator.content.Variable;
+import emulator.content.vars.Variable;
 
 public class VarChanges {
 

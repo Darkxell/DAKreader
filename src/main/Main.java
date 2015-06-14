@@ -2,9 +2,9 @@
 package main;
 
 import java.io.FileInputStream;
-import java.util.Scanner;
 
 import emulator.DAKemu;
+import emulator.launcher.Launcher;
 
 /** Main is a static class and MUST NOT be instancied as an object in any case. */
 public class Main {
@@ -19,18 +19,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-	Scanner sc = new Scanner(System.in);
-	System.out
-		.println("---------------------------------------------------------------------");
-	System.out
-		.println("DAK reader launched. Please input the link to your .dak file to open.");
-	System.out
-		.println("---------------------------------------------------------------------");
-
 	// DAKscripts\file.dak
 	boolean canlaunch = true;
 	try {
-	    String filepath = sc.next();
+	    String filepath = Launcher.askfile();
 	    try {
 		FileInputStream fis = new FileInputStream(filepath);
 		fis.close();
@@ -53,7 +45,6 @@ public class Main {
 		    .println("Sorry, something weird happenned and the emulator was forced to close.");
 	    System.err.println(e);
 	}
-	sc.close();
 	// END OF SCRIPT
     }
 

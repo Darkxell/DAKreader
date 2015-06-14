@@ -8,23 +8,25 @@ public class I_control extends ParentInterpreter {
     }
 
     public void execute(String codeLine) {
-	// io: stop() ;
+	// control: stop() ;
 	if (main.StringMatcher.stringMatch(codeLine, "stop()")
 		| main.StringMatcher.stringMatch(codeLine, "stop")) {
 	    Common.stop();
 	}
-	// io: setlabel(name) ;
+	// control: setlabel(name) ;
 	if (main.StringMatcher.stringMatch(codeLine, "setlabel(*)")) {
 	    // Don't do anything if already compiled.
 	}
-	// io: goto(name) ;
+	// control: goto(name) ;
 	if (main.StringMatcher.stringMatch(codeLine, "goto(*)")) {
 	    Common.gotoLine(codeLine);
 	}
-	// io: wait(time_s) ;
+	// control: wait(time_s) ;
 	if (main.StringMatcher.stringMatch(codeLine, "wait(*)")) {
 	    Common.wait(codeLine);
 	}
+	// control: if() ;
+	// TODO : implement if, then and end functions. Needs to be compiled.
 
     }
 

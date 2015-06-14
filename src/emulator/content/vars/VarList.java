@@ -1,4 +1,5 @@
-package emulator.content;
+package emulator.content.vars;
+
 
 public class VarList {
 

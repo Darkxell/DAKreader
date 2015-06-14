@@ -1,6 +1,6 @@
 package interpreter.control;
 
-import emulator.content.Variable;
+import emulator.content.vars.Variable;
 import exceptions.NoBracketsOccurenceException;
 
 public class Common {
